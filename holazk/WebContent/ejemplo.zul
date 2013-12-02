@@ -1,0 +1,35 @@
+<?page title="Mantenimiento" contentType="text/html;charset=UFT=8"?>
+<zk>
+
+<window title="Mantenimiento" border="normal" width ="500px" apply="controlador.PersonaController">
+	<grid>
+		<columns>
+		</columns>
+		<rows>
+			<row>
+				Nombre<textbox id="txtNombre"/>
+			</row>
+			<row>
+				Edad<textbox id="txtEdad" />
+			</row>
+			<row>
+				Direccion<textbox id="txtDireccion" />
+			</row>
+			<row>
+				<button id="btnAgregar" label= "Agregar" />
+			</row>
+		</rows>
+	</grid>	
+	
+<listbox id="listado">
+	<listhead>
+		<listheader label= "Nombre" sort="auto" />
+		<listheader label= "Edad" sort="auto" />
+		<listheader label= "Direccion" sort="auto" />
+	</listhead>
+	<listitem>
+	</listitem>
+</listbox>
+</window>
+
+</zk>
